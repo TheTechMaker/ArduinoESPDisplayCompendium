@@ -25,6 +25,7 @@ int cnt;
 
 void setup() {
 
+	// change I2C default pins to GPIO2 (SDA) and GPIO0 (SCL)
     Wire.begin(2, 0);
 
    
