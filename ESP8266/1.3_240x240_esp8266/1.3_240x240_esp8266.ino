@@ -19,7 +19,7 @@ Test für das 1,3 Zoll SPI 240x240 OLED-Display ESP8266
 
 #define TFT_RST   4     // TFT RST pin is connected to NodeMCU pin D2 (GPIO4)
 #define TFT_DC    5     // TFT DC  pin is connected to NodeMCU pin D1 (GPIO5)
-#define TFT_CS    -1    // daisplay has no CS 
+#define TFT_CS    -1    // display has no CS 
   
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_ST7789.h> // Hardware-specific library for ST7789

@@ -22,7 +22,7 @@ Test für das 1,77 Zoll SPI TFT-Display ESP32 - Wemos D1 R32
 
 #define TFT_PIN_CS   -1  // connect to GND  
 #define TFT_PIN_DC    5  // GPIO 5 / D1 
-#define TFT_PIN_RST  33  // ESP Reset-Pin
+#define TFT_PIN_RST  33  // ESP Reset-Pin will work but it's better to use a GPIO pin 
 
 #include <Adafruit_GFX.h>    // Adafruit Grafik-Bibliothek wird benötigt
 #include <Adafruit_ST7735.h> // Adafruit ST7735-Bibliothek wird benötigt
