@@ -34,19 +34,29 @@ int cnt;
 void setup(void) {
   /* ST7735-Chip initialisieren (INITR_BLACKTAB / INITR_REDTAB / INITR_GREENTAB) */
   tft.initR(INITR_BLACKTAB);   
-  tft.setRotation(3);
+  tft.setRotation(1);
   tft.fillScreen(ST7735_BLACK);
   tft.setTextColor(ST7735_WHITE);
   tft.setTextSize(2);
+  
+  tft.fillRect(0,0,160,128,ST7735_GREEN);
+  tft.fillRect(1,1,158,126,ST7735_BLACK);
+
+//	tft.drawRect(0,0,160,128,ST7735_GREEN);
+
+
+  
 }
 
 void loop() {
+
   tft.setCursor(12,30);
   tft.print("Hello World!");
   // fill text area black before printing new value
-  tft.fillRect(75,52,85,14,ST7735_BLACK);
+  tft.fillRect(75,52,84,14,ST7735_BLACK);
   tft.setCursor(75,52);
   tft.print(cnt);
   cnt++;
   delay(1000); 
+
 }
